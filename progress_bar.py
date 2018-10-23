@@ -14,16 +14,16 @@ class ProgressBar(object):
         labeling_fun=_default_labeling_fun,
         display=True
     ):
-    """
-    :param every: the number of iterations to wait between two updates or None for dynamic behaviour
-    :type every: int
-    :param size: the total number of iterations or None if not available
-    :type size: int
-    :param labeling_fun: A function that given the current iteration, the total number of iterations, and the elapsed time returns the labeling string
-    :type labeling_fun: (int, int, int) -> str
-    :param display: a boolean indicating if the progress bar should be displayed
-    :type display: bool
-    """
+        """
+        :param every: the number of iterations to wait between two updates or None for dynamic behaviour
+        :type every: int
+        :param size: the total number of iterations or None if not available
+        :type size: int
+        :param labeling_fun: A function that given the current iteration, the total number of iterations, and the elapsed time returns the labeling string
+        :type labeling_fun: (int, int, int) -> str
+        :param display: a boolean indicating if the progress bar should be displayed
+        :type display: bool
+        """
         self._counter = 0
         self._adaptive = True
         self._every = None
